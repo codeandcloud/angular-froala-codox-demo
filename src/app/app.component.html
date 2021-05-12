@@ -1,0 +1,25 @@
+<div class="header">
+  <a href="https://www.codox.io" class="logo-link" target="_blank">
+    <img id="logo" src="https://www.codox.io/assets/img/wave.svg" alt="">
+  </a>
+  <div class="logo-title">
+    Angular Froala + Codox: Real Time Collaboration
+  </div>
+</div>
+
+
+
+<div class="main-container">
+  <div class="document-container">
+    <ul class="document-list">
+      <li routerLinkActive="active" class="document-link">
+        <a [routerLink]="['/alice']">Alice</a>
+      </li>
+      <li routerLinkActive="active" class="document-link">
+        <a [routerLink]="['/bob']">Bob</a>
+      </li>
+    </ul>
+  </div>
+  <div class="editors">
+    <router-outlet></router-outlet>
+  </div>
